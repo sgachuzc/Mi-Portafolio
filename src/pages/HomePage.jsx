@@ -1,5 +1,9 @@
+import { ProgressBar } from "../ui"
+
 export const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <>
+      <ProgressBar />
+    </>
   )
 }
