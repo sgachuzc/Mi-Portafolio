@@ -1,5 +1,7 @@
+import { PortafolioRouter } from "./router/PortafolioRouter"
+
 export const PortafolioApp = () => {
   return (
-    <h1>Mi Portafolio</h1>
+    <PortafolioRouter />
   )
 }
