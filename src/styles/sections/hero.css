@@ -12,7 +12,7 @@ h1{
   line-height: 1;
   background-clip: text;
   color: transparent;
-  background-image: linear-gradient(45deg, rgb(2, 255, 4), rgb(0, 232, 237), rgb(2, 255, 4));
+  background-image: linear-gradient(45deg, rgb(2, 255, 4), rgb(0, 232, 237), #02ff04);
   background-size: 400% 400%;
   animation: animate 15s ease infinite;
   -webkit-animation: animate 15s ease infinite;
@@ -49,27 +49,38 @@ span{
   align-items: center;
   flex-direction: row;
 }
-.link{
+.download-cv{
   color: #fff;
   text-align: center;
-  background-color: #1A5319;
-  border-radius: 5px;
-  padding: 5px;
   text-decoration: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-.link img{
+  padding: 5px 10px;
+  background-color: #1A5319;
+  width: max-content;
+  display: flex;
+  align-items: center;
   vertical-align: middle;
+  border-radius: 20px;
+
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.download-cv figure{
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
   margin: 0 0.5rem;
+  vertical-align: middle;
+  border-radius: 50%;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
-.link:hover{
-  background-color: rgb(2, 255, 4);
-  color: black;
-}
-.link:hover img{
-  filter: invert(black);
-  -webkit-filter: invert(black);
+.download-cv img{
+  vertical-align: middle;
+  filter: brightness(0) saturate(100%) invert(25%) sepia(35%) saturate(954%) hue-rotate(70deg) brightness(94%) contrast(95%);
+  -webkit-filter: brightness(0) saturate(100%) invert(25%) sepia(35%) saturate(954%) hue-rotate(70deg) brightness(94%) contrast(95%);
 }

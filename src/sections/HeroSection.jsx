@@ -13,9 +13,11 @@ export const HeroSection = () => {
       <h1>Sergio<br />Gachúz</h1>
       <ReactTyped strings={ textToType } typeSpeed={ 40 } backSpeed={ 30 } />
       <div className="section-links">
-        <Link className='link' target='_blank' to={'../../public/Curriculum.pdf'} download>
+        <Link className='download-cv' target='_blank' to={'../../public/Curriculum.pdf'} download>
           Descargar CV 
-          <img src={'../../public/download.svg'} alt="" />
+          <figure>
+            <img src={'/download.svg'} alt="" />
+          </figure>
         </Link>
       </div>
     </section>
